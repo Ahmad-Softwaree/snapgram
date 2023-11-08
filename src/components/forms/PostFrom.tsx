@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -74,7 +73,6 @@ const PostFrom = ({ post, action }: Props) => {
         ...values,
         userId: user.id,
       });
-      console.log(newPost);
 
       if (!newPost) {
         return toast({

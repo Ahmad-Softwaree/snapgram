@@ -1,10 +1,9 @@
-import { Models } from "appwrite";
 import Loader from "./Loader";
 import GridPostList from "./GridPostList";
 
 interface Props {
   isSearchFetching: boolean;
-  searchedPosts: Models.Document[];
+  searchPosts: any;
 }
 
 const SearchResults = ({ isSearchFetching, searchPosts }: Props) => {
